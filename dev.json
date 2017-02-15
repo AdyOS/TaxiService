@@ -1,0 +1,23 @@
+{
+    "apps": [
+        {
+            "name": "dev",
+            "script": "app.js",
+            "watch": [
+                "api/models",
+                "api/controllers",
+                "api/services",
+                "config",
+                "crontab",
+                "responses"
+            ],
+            "log_date_format": "dd-mm-yyyy hh:mm z",
+            "instances": "1",
+            "exec_mode": "cluster_mode",
+            "env": {
+                "port": "1337",
+                "node_env": "development",
+            }
+        }
+    ]
+}
